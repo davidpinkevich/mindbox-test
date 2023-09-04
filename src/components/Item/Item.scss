@@ -1,0 +1,39 @@
+.item {
+  &:hover {
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: rgb(229, 224, 224);
+  }
+}
+
+.check {
+  cursor: pointer;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: 2%;
+  border: 2px solid rgb(187, 182, 191);
+  border-radius: 50%;
+  transition: all 0.2s;
+  user-select: none;
+  &:hover {
+    border: 2px solid rgb(143, 140, 145);
+    box-shadow: 0px 0px 1px 1px rgb(143, 140, 145);
+    transform: scale(1.1);
+  }
+}
+
+.active-text {
+  transition: all 0.6s;
+  color: rgb(69, 65, 74);
+  font-weight: 700;
+  text-align: center;
+}
+.completed-text {
+  text-align: center;
+  font-weight: 700;
+  transition: all 0.6s;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgb(187, 182, 191);
+  color: rgb(187, 182, 191);
+}
