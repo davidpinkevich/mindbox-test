@@ -1,0 +1,45 @@
+@import "../../styles/normalize.scss";
+.App {
+  background-color: rgb(201, 195, 195);
+  height: 100vh;
+}
+
+.container {
+  padding-top: 40px;
+  position: relative;
+  animation: openApp 2s;
+  top: 50px;
+}
+
+@keyframes openApp {
+  0% {
+    top: -400px;
+  }
+  50% {
+    top: 0;
+  }
+  100% {
+    top: 50px;
+  }
+}
+
+@keyframes header {
+  0% {
+    top: -400px;
+  }
+  50% {
+    top: 0;
+  }
+  100% {
+    top: 50px;
+  }
+}
+
+.main-title {
+  position: relative;
+  top: 50px;
+  font-size: 44px;
+  text-align: center;
+  color: rgb(96, 93, 99);
+  animation: header 2.5s;
+}
