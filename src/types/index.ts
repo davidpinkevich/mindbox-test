@@ -23,6 +23,7 @@ export interface ItemsProps {
 export interface InputFieldPros {
   opened: boolean;
   input: string;
+  total: number;
   setOpened: (arg: boolean) => void;
   addItem: (text: string) => void;
   addText: (event: ChangeEvent<HTMLInputElement>) => void;

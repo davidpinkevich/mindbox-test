@@ -11,6 +11,7 @@ describe("render input field", () => {
       <InputField
         input="Test words for mock"
         opened={false}
+        total={5}
         addItem={addItem}
         addText={addText}
         setOpened={setOpened}

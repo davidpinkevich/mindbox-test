@@ -7,10 +7,13 @@
   transform: rotate(0deg);
   transition: all 0.3s;
 }
-
-.action-hover:hover {
-  transform: scale(1.1);
-  transition: all 0.2s;
+.action-hover {
+  user-select: none;
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.2s;
+    user-select: none;
+  }
 }
 
 .input {

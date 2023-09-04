@@ -14,6 +14,7 @@ import arrow from "../../assets/icons/arrow.svg";
 export const InputField: FC<InputFieldPros> = ({
   opened,
   input,
+  total,
   setOpened,
   addText,
   addItem,
@@ -23,6 +24,7 @@ export const InputField: FC<InputFieldPros> = ({
       <Paper shadow="md" p="md">
         <Flex align="center" justify="space-between" gap="lg">
           <ActionIcon
+            disabled={!total}
             className="action-hover"
             p={5}
             size="lg"

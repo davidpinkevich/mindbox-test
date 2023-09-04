@@ -23,6 +23,7 @@ function App() {
       <Stack className="container" maw={800} mx="auto" spacing="14px">
         <InputField
           opened={opened}
+          total={items.length}
           setOpened={(arg) => setOpened(!arg)}
           addItem={addItem}
           addText={addText}
