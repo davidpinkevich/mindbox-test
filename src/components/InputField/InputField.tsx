@@ -35,6 +35,7 @@ export const InputField: FC<InputFieldPros> = ({
             />
           </ActionIcon>
           <TextInput
+            data-testid="test-input"
             placeholder="What needs to be done?"
             value={input}
             onChange={addText}
